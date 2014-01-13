@@ -1,0 +1,25 @@
+require "rails"
+
+  module Payincludegem
+    module Generators
+      class InstallGenerator < ::Rails::Generators::Base
+
+        source_root File.expand_path('../../../../../source', __FILE__)
+
+        def copy_mail
+          say_status("copying", "send mail users", :green)
+          copy_file "mail/user_mailer.rb", "app/mailers/user_mailer.rb"
+          copy_file "mail/user_mailer/sendmail.html.erb", "app/views/user_mailer/sendmail.html.erb"
+      
+        end
+
+        def copy_task
+          say_status("stylesheets/copying", "copy task", :green)
+          copy_file "tasks/import.rake", "lib/tasks/import.rake"
+        end
+
+
+      end
+    end
+  end
+

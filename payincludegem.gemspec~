@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["LE MINH DUC"]
   spec.email         = ["duclm.ict@gmail.com"]
   spec.description   = %q{include gem paypal}
-  spec.summary       = %q{include gem paypalaaa}
+  spec.summary       = %q{include gem paypal}
   spec.homepage      = "https://github.com/Duclmict/payincludegem"
   spec.license       = "MIT"
 
